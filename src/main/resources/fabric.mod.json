@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "plants-a-more",
+  "version": "1.0.0",
+  "name": "Plants a' more",
+  "description": "Adds a decorative plants to your world.",
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.yourname.rainbowtulip.RainbowTulipMod"
+    ],
+    "client": [
+      "com.yourname.rainbowtulip.RainbowTulipModClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1"
+  },
+  "custom": {
+    "modmenu:tags": ["plants-amore"]
+  }
+}
