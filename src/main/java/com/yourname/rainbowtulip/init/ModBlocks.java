@@ -49,9 +49,18 @@ public class ModBlocks {
     private static Block register(String name, Block block) {
         Registry.register(BuiltInRegistries.BLOCK,
                 ResourceLocation.fromNamespaceAndPath("rainbowtulip", name), block);
+        
+        // Use custom WaterPoppiesBlockItem for water poppies
+        BlockItem item;
+        if (block instanceof com.yourname.rainbowtulip.block.WaterPoppiesBlock) {
+            item = new WaterPoppiesBlockItem(block, new Item.Properties());
+        } else {
+            item = new BlockItem(block, new Item.Properties());
+        }
+        
         Registry.register(BuiltInRegistries.ITEM,
                 ResourceLocation.fromNamespaceAndPath("rainbowtulip", name),
-                new BlockItem(block, new Item.Properties()));
+                item);
         ALL_BLOCKS.add(block);
         return block;
     }
