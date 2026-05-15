@@ -11,18 +11,19 @@ import net.minecraft.world.item.ItemStack;
 public class ModCreativeTab {
 
     public static final CreativeModeTab PLANTS_AMORE_TAB = FabricItemGroup.builder()
-        .title(Component.translatable("itemGroup.rainbowtulip.plants_amore"))
-        .icon(() -> new ItemStack(ModBlocks.RAINBOW_TULIP.asItem()))
-        .displayItems((params, output) -> {
-            output.accept(ModBlocks.RAINBOW_TULIP.asItem());
-        })
-        .build();
+            .title(Component.translatable("itemGroup.rainbowtulip.plants_amore"))
+            .icon(() -> new ItemStack(ModBlocks.RAINBOW_TULIP.asItem()))
+            .displayItems((params, output) -> {
+                // Automatically includes every block registered via ModBlocks.register()
+                ModBlocks.ALL_BLOCKS.forEach(b -> output.accept(b.asItem()));
+            })
+            .build();
 
     public static void register() {
         Registry.register(
-            BuiltInRegistries.CREATIVE_MODE_TAB,
-            ResourceLocation.fromNamespaceAndPath("rainbowtulip", "plants_amore"),
-            PLANTS_AMORE_TAB
+                BuiltInRegistries.CREATIVE_MODE_TAB,
+                ResourceLocation.fromNamespaceAndPath("rainbowtulip", "plants_amore"),
+                PLANTS_AMORE_TAB
         );
     }
 }
