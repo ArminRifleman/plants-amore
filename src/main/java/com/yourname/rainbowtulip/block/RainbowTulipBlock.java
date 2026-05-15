@@ -1,7 +1,8 @@
 package com.yourname.rainbowtulip.block;
 
 import com.mojang.serialization.MapCodec;
-import com.yourname.rainbowtulip.blockentity.RainbowTulipBlockEntity;
+import com.yourname.rainbowtulip.blockentity.GenericPlantBlockEntity;
+import com.yourname.rainbowtulip.init.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.BlockTags;
@@ -81,6 +82,6 @@ public class RainbowTulipBlock extends BaseEntityBlock {
     @Override
     @Nullable
     public BlockEntity newBlockEntity(@NotNull BlockPos pos, @NotNull BlockState state) {
-        return new RainbowTulipBlockEntity(pos, state);
+        return new GenericPlantBlockEntity(ModBlockEntities.RAINBOW_TULIP_BE, pos, state);
     }
 }

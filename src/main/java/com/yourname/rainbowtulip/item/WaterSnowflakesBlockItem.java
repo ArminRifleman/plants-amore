@@ -14,12 +14,11 @@ import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 
-public class WaterPoppiesBlockItem extends BlockItem {
+public class WaterSnowflakesBlockItem extends BlockItem {
 
-    public WaterPoppiesBlockItem(Block block, Properties properties) {
+    public WaterSnowflakesBlockItem(Block block, Properties properties) {
         super(block, properties);
     }
-
 
     /**
      * Called when the player right-clicks in the air / on a fluid surface.
@@ -39,28 +38,29 @@ public class WaterPoppiesBlockItem extends BlockItem {
         BlockPos hitPos = hit.getBlockPos();
         Direction face  = hit.getDirection();
 
-            // We only care about the TOP face of a water source block
-            if (face == Direction.UP) {
-                FluidState fluid = level.getFluidState(hitPos);
-                if (fluid.getType() == Fluids.WATER && fluid.isSource()) {
-                    // The block should go one position above the water block
-                    BlockPos placePos = hitPos.above();
+        // We only care about the TOP face of a water source block
+        if (face == Direction.UP) {
+            FluidState fluid = level.getFluidState(hitPos);
+            if (fluid.getType() == Fluids.WATER && fluid.isSource()) {
+                // The block should go one position above the water block
+                BlockPos placePos = hitPos.above();
 
-                    // Only place if that space is empty
-                    if (level.getBlockState(placePos).isAir()) {
-                        BlockPlaceContext ctx = new BlockPlaceContext(
-                                level, player, hand, stack,
-                                new BlockHitResult(hit.getLocation(), Direction.UP, placePos, false));
+                // Only place if that space is empty
+                if (level.getBlockState(placePos).isAir()) {
+                    BlockPlaceContext ctx = new BlockPlaceContext(
+                            level, player, hand, stack,
+                            new BlockHitResult(hit.getLocation(), Direction.UP, placePos, false));
 
-                        InteractionResult result = this.place(ctx);
-                        if (result.consumesAction()) {
-                            return net.minecraft.world.InteractionResultHolder.success(
-                                    player.getItemInHand(hand));
-                        }
+                    InteractionResult result = this.place(ctx);
+                    if (result.consumesAction()) {
+                        return net.minecraft.world.InteractionResultHolder.success(
+                                player.getItemInHand(hand));
                     }
                 }
             }
+        }
 
         return net.minecraft.world.InteractionResultHolder.pass(stack);
     }
 }
+
