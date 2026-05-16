@@ -4,7 +4,6 @@ import com.mojang.serialization.MapCodec;
 import com.yourname.rainbowtulip.blockentity.GenericPlantBlockEntity;
 import com.yourname.rainbowtulip.init.ModBlockEntities;
 import com.yourname.rainbowtulip.item.DragonScalesBlockItem;
-import com.yourname.rainbowtulip.item.WaterSnowflakesBlockItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;

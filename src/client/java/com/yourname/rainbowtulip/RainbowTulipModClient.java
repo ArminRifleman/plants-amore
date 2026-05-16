@@ -3,9 +3,11 @@ package com.yourname.rainbowtulip;
 import com.yourname.rainbowtulip.blockentity.renderer.RainbowTulipBlockEntityRenderer;
 import com.yourname.rainbowtulip.blockentity.renderer.WaterPoppiesBlockEntityRenderer;
 import com.yourname.rainbowtulip.blockentity.renderer.WaterSnowflakesBlockEntityRenderer;
+import com.yourname.rainbowtulip.blockentity.renderer.DragonScalesBlockEntityRenderer;
 import com.yourname.rainbowtulip.entity.client.RainbowTulipModel;
 import com.yourname.rainbowtulip.entity.client.WaterPoppiesModel;
 import com.yourname.rainbowtulip.entity.client.WaterSnowflakesModel;
+import com.yourname.rainbowtulip.entity.client.DragonScalesModel;
 import com.yourname.rainbowtulip.init.ModBlockEntities;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
@@ -28,6 +30,10 @@ public class RainbowTulipModClient implements ClientModInitializer {
                 WaterSnowflakesModel.LAYER_LOCATION,
                 WaterSnowflakesModel::createBodyLayer
         );
+        EntityModelLayerRegistry.registerModelLayer(
+                DragonScalesModel.LAYER_LOCATION,
+                DragonScalesModel::createBodyLayer
+        );
 
         // Register block entity renderers
         BlockEntityRendererRegistry.register(
@@ -41,6 +47,10 @@ public class RainbowTulipModClient implements ClientModInitializer {
         BlockEntityRendererRegistry.register(
                 ModBlockEntities.WATER_SNOWFLAKES_BE,
                 WaterSnowflakesBlockEntityRenderer::new
+        );
+        BlockEntityRendererRegistry.register(
+                ModBlockEntities.DRAGON_SCALES_BE,
+                DragonScalesBlockEntityRenderer::new
         );
     }
 }

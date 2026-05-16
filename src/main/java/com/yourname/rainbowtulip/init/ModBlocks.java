@@ -58,7 +58,7 @@ public class ModBlocks {
     );
 
     public static final Block DRAGON_SCALES = register(
-            "dragon_scales.json",
+            "dragon_scales",
             new DragonScalesBlock(
                     BlockBehaviour.Properties.of()
                             .mapColor(MapColor.WATER)

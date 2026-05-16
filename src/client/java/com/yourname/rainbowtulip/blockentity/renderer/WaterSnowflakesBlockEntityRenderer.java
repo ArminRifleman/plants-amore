@@ -23,7 +23,7 @@ public class WaterSnowflakesBlockEntityRenderer extends AbstractPlantBlockEntity
     @Override
     protected void renderPlant(PoseStack poseStack, VertexConsumer buffer,
                               int packedLight, int grassColor) {
-        poseStack.scale(0.5F, 0.5F, 0.5F);
+        poseStack.scale(0.6F, 0.6F, 0.6F);
         model.renderWithBiomeTint(poseStack, buffer, packedLight, OverlayTexture.NO_OVERLAY, grassColor);
     }
 }

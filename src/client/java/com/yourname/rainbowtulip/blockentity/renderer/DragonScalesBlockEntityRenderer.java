@@ -11,7 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 public class DragonScalesBlockEntityRenderer extends AbstractPlantBlockEntityRenderer<GenericPlantBlockEntity> {
 
     private static final ResourceLocation TEXTURE =
-            ResourceLocation.fromNamespaceAndPath("rainbowtulip", "textures/entity/dragon_scales.json.png");
+            ResourceLocation.fromNamespaceAndPath("rainbowtulip", "textures/entity/dragon_scales.png");
 
     private final DragonScalesModel<?> model;
 
@@ -23,6 +23,7 @@ public class DragonScalesBlockEntityRenderer extends AbstractPlantBlockEntityRen
     @Override
     protected void renderPlant(PoseStack poseStack, VertexConsumer buffer,
                                int packedLight, int grassColor) {
+        poseStack.scale(2.0F, 2.0F, 2.0F);
         model.renderWithBiomeTint(poseStack, buffer, packedLight, OverlayTexture.NO_OVERLAY, grassColor);
     }
 }
