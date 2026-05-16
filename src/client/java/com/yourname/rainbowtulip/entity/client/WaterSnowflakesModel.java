@@ -72,7 +72,7 @@ public class WaterSnowflakesModel<T extends Entity> extends EntityModel<T> {
 
         PartDefinition cube_r18 = Flowers.addOrReplaceChild("cube_r18", CubeListBuilder.create().texOffs(7, 9).addBox(-2.0F, 0.0F, 0.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.5072F, -6.9996F, 2.1791F, -2.3417F, -0.6303F, 2.362F));
 
-        PartDefinition LeavesAndStems = Plant.addOrReplaceChild("LeavesAndStems and Stems", CubeListBuilder.create(), PartPose.offset(6.656F, -6.3F, 4.7053F));
+        PartDefinition LeavesAndStems = Plant.addOrReplaceChild("LeavesAndStems", CubeListBuilder.create(), PartPose.offset(6.656F, -6.3F, 4.7053F));
 
         PartDefinition cube_r19 = LeavesAndStems.addOrReplaceChild("cube_r19", CubeListBuilder.create().texOffs(13, 11).addBox(0.391F, -12.1611F, -7.8888F, 0.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.8238F, 14.7394F, 5.3361F, -0.3969F, 0.572F, -0.4003F));
 
@@ -112,8 +112,7 @@ public class WaterSnowflakesModel<T extends Entity> extends EntityModel<T> {
 
         PartDefinition cube_r37 = LeavesAndStems.addOrReplaceChild("cube_r37", CubeListBuilder.create().texOffs(13, 11).addBox(3.0F, -12.0F, -6.0F, 0.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.5302F, 12.6187F, 1.4292F, -0.2188F, 0.5632F, -0.2862F));
 
-        PartDefinition cube_r38 = LeavesAndStems.addOrReplaceChild("cube_r38", CubeListBuilder.create().texOffs(13, 11).addBox(3.0F, -12.0F, -6.0F, 0.0F, 6.0F, 6.0F, new CubeDeformation(0.0F))
-                .texOffs(13, 11).addBox(3.0F, -12.0F, -6.0F, 0.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-13.076F, 11.8482F, -4.4549F, 0.1281F, -1.3478F, -0.3413F));
+        PartDefinition cube_r38 = LeavesAndStems.addOrReplaceChild("cube_r38", CubeListBuilder.create().texOffs(13, 11).addBox(3.0F, -12.0F, -6.0F, 0.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-13.076F, 11.8482F, -4.4549F, 0.1281F, -1.3478F, -0.3413F));
 
         PartDefinition cube_r39 = LeavesAndStems.addOrReplaceChild("cube_r39", CubeListBuilder.create().texOffs(1, 7).addBox(-3.0F, -6.0F, 0.0F, 0.0F, 6.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-9.856F, 7.0F, -4.7053F, 2.4179F, 1.2062F, 2.4986F));
 
