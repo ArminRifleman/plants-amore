@@ -17,6 +17,9 @@ public class ModBlockEntities {
     public static final BlockEntityType<GenericPlantBlockEntity> WATER_SNOWFLAKES_BE =
             registerWaterSnowflakes("water_snowflakes", ModBlocks.WATER_SNOWFLAKES);
 
+    public static final BlockEntityType<GenericPlantBlockEntity> DRAGON_SCALES_BE =
+           registerDragonScales("dragon_scales", ModBlocks.DRAGON_SCALES);
+
     private static BlockEntityType<GenericPlantBlockEntity> registerRainbowTulip(String name, net.minecraft.world.level.block.Block block) {
         return Registry.register(
                 BuiltInRegistries.BLOCK_ENTITY_TYPE,
@@ -36,6 +39,15 @@ public class ModBlockEntities {
     }
 
     private static BlockEntityType<GenericPlantBlockEntity> registerWaterSnowflakes(String name, net.minecraft.world.level.block.Block block) {
+        return Registry.register(
+                BuiltInRegistries.BLOCK_ENTITY_TYPE,
+                ResourceLocation.fromNamespaceAndPath("rainbowtulip", name),
+                BlockEntityType.Builder.of((pos, state) -> new GenericPlantBlockEntity(
+                        null, pos, state), block).build(null)
+        );
+    }
+
+    private static BlockEntityType<GenericPlantBlockEntity> registerDragonScales(String name, net.minecraft.world.level.block.Block block) {
         return Registry.register(
                 BuiltInRegistries.BLOCK_ENTITY_TYPE,
                 ResourceLocation.fromNamespaceAndPath("rainbowtulip", name),

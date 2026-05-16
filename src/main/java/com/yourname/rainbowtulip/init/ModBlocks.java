@@ -1,9 +1,6 @@
 package com.yourname.rainbowtulip.init;
 
-import com.yourname.rainbowtulip.block.BlockItemProvider;
-import com.yourname.rainbowtulip.block.RainbowTulipBlock;
-import com.yourname.rainbowtulip.block.WaterPoppiesBlock;
-import com.yourname.rainbowtulip.block.WaterSnowflakesBlock;
+import com.yourname.rainbowtulip.block.*;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -50,6 +47,19 @@ public class ModBlocks {
     public static final Block WATER_SNOWFLAKES = register(
             "water_snowflakes",
             new WaterSnowflakesBlock(
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.WATER)
+                            .noCollission()
+                            .instabreak()
+                            .sound(SoundType.LILY_PAD)
+                            .noOcclusion()
+                            .isValidSpawn((s, g, p, t) -> false)
+            )
+    );
+
+    public static final Block DRAGON_SCALES = register(
+            "dragon_scales",
+            new DragonScalesBlock(
                     BlockBehaviour.Properties.of()
                             .mapColor(MapColor.WATER)
                             .noCollission()
