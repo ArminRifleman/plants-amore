@@ -3,6 +3,7 @@ package com.yourname.rainbowtulip.block;
 import com.mojang.serialization.MapCodec;
 import com.yourname.rainbowtulip.blockentity.GenericPlantBlockEntity;
 import com.yourname.rainbowtulip.init.ModBlockEntities;
+import com.yourname.rainbowtulip.item.DragonScalesBlockItem;
 import com.yourname.rainbowtulip.item.WaterSnowflakesBlockItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -92,7 +93,7 @@ public class DragonScalesBlock extends BaseEntityBlock implements BlockItemProvi
 
     @Override
     public BlockItem createBlockItem(net.minecraft.world.level.block.Block block, Item.Properties properties) {
-        return new WaterSnowflakesBlockItem(block, properties);
+        return new DragonScalesBlockItem(block, properties);
     }
 
     @Override

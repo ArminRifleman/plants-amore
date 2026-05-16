@@ -11,7 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 public class DragonScalesBlockEntityRenderer extends AbstractPlantBlockEntityRenderer<GenericPlantBlockEntity> {
 
     private static final ResourceLocation TEXTURE =
-            ResourceLocation.fromNamespaceAndPath("rainbowtulip", "textures/entity/dragon_scales.png");
+            ResourceLocation.fromNamespaceAndPath("rainbowtulip", "textures/entity/dragon_scales.json.png");
 
     private final DragonScalesModel<?> model;
 

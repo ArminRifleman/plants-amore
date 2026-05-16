@@ -12,7 +12,7 @@ import net.minecraft.world.entity.Entity;
 
 public class DragonScalesModel<T extends Entity> extends EntityModel<T> {
     public static final ModelLayerLocation LAYER_LOCATION =
-            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("rainbowtulip", "dragon_scales"), "main");
+            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath("rainbowtulip", "dragon_scales.json"), "main");
     private final ModelPart DragonScale;
     private final ModelPart Greens;
     private final ModelPart Flower;

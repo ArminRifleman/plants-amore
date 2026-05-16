@@ -18,7 +18,7 @@ public class ModBlockEntities {
             registerWaterSnowflakes("water_snowflakes", ModBlocks.WATER_SNOWFLAKES);
 
     public static final BlockEntityType<GenericPlantBlockEntity> DRAGON_SCALES_BE =
-           registerDragonScales("dragon_scales", ModBlocks.DRAGON_SCALES);
+           registerDragonScales("dragon_scales.json", ModBlocks.DRAGON_SCALES);
 
     private static BlockEntityType<GenericPlantBlockEntity> registerRainbowTulip(String name, net.minecraft.world.level.block.Block block) {
         return Registry.register(
