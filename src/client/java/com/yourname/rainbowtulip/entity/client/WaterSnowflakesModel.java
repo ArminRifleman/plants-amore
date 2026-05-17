@@ -42,11 +42,11 @@ public class WaterSnowflakesModel<T extends Entity> extends EntityModel<T> {
 
         PartDefinition cube_r3 = Flowers.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(7, 9).addBox(-2.0F, 0.0F, 0.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.7887F, -4.7717F, -0.9727F, -3.0877F, -0.0024F, 2.9594F));
 
-        PartDefinition cube_r4 = Flowers.addOrReplaceChild("cube_r4", CubeListBuilder.create().texOffs(7, 9).addBox(-2.0F, 0.0F, 0.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.7887F, -4.8717F, -0.9727F, 0.5699F, -0.2515F, 0.5174F));
+        PartDefinition cube_r4 = Flowers.addOrReplaceChild("cube_r4", CubeListBuilder.create().texOffs(7, 9).addBox(-2.1F, 0.0F, 0.1F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.7887F, -4.8717F, -0.9727F, 0.5699F, -0.2515F, 0.5174F));
 
-        PartDefinition cube_r5 = Flowers.addOrReplaceChild("cube_r5", CubeListBuilder.create().texOffs(7, 9).addBox(-2.0F, 0.0F, 0.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.7887F, -4.8717F, -0.9727F, -2.4351F, -0.8571F, 2.7455F));
+        PartDefinition cube_r5 = Flowers.addOrReplaceChild("cube_r5", CubeListBuilder.create().texOffs(7, 9).addBox(-2.1F, 0.0F, 0.1F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.7887F, -4.8717F, -0.9727F, -2.4351F, -0.8571F, 2.7455F));
 
-        PartDefinition cube_r6 = Flowers.addOrReplaceChild("cube_r6", CubeListBuilder.create().texOffs(7, 9).addBox(-2.0F, 0.0F, 0.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.7887F, -4.8717F, -0.9727F, 2.6515F, 0.786F, 2.2083F));
+        PartDefinition cube_r6 = Flowers.addOrReplaceChild("cube_r6", CubeListBuilder.create().texOffs(7, 9).addBox(-2.1F, 0.0F, 0.1F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.7887F, -4.8717F, -0.9727F, 2.6515F, 0.786F, 2.2083F));
 
         PartDefinition cube_r7 = Flowers.addOrReplaceChild("cube_r7", CubeListBuilder.create().texOffs(7, 9).addBox(-2.0F, 0.0F, 0.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.0969F, -6.1107F, 4.2587F, -2.8196F, 0.5429F, 2.7774F));
 
@@ -54,11 +54,11 @@ public class WaterSnowflakesModel<T extends Entity> extends EntityModel<T> {
 
         PartDefinition cube_r9 = Flowers.addOrReplaceChild("cube_r9", CubeListBuilder.create().texOffs(7, 9).addBox(-2.0F, 0.0F, 0.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.0969F, -6.1107F, 4.2587F, 0.2145F, 0.5982F, 0.0246F));
 
-        PartDefinition cube_r10 = Flowers.addOrReplaceChild("cube_r10", CubeListBuilder.create().texOffs(7, 9).addBox(-2.0F, 0.0F, 0.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.0969F, -6.2107F, 4.2587F, -2.2957F, -0.2993F, 2.4099F));
+        PartDefinition cube_r10 = Flowers.addOrReplaceChild("cube_r10", CubeListBuilder.create().texOffs(7, 9).addBox(-2.1F, 0.0F, 0.1F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.0969F, -6.2107F, 4.2587F, -2.2957F, -0.2993F, 2.4099F));
 
-        PartDefinition cube_r11 = Flowers.addOrReplaceChild("cube_r11", CubeListBuilder.create().texOffs(7, 9).addBox(-2.0F, 0.0F, 0.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.0969F, -6.2107F, 4.2587F, 1.759F, 1.281F, 1.1493F));
+        PartDefinition cube_r11 = Flowers.addOrReplaceChild("cube_r11", CubeListBuilder.create().texOffs(7, 9).addBox(-2.1F, 0.0F, 0.1F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.0969F, -6.2107F, 4.2587F, 1.759F, 1.281F, 1.1493F));
 
-        PartDefinition cube_r12 = Flowers.addOrReplaceChild("cube_r12", CubeListBuilder.create().texOffs(7, 9).addBox(-2.0F, 0.0F, 0.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.0969F, -6.2107F, 4.2587F, 0.0478F, -0.3596F, 0.4226F));
+        PartDefinition cube_r12 = Flowers.addOrReplaceChild("cube_r12", CubeListBuilder.create().texOffs(7, 9).addBox(-2.1F, 0.0F, 0.1F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-0.0969F, -6.2107F, 4.2587F, 0.0478F, -0.3596F, 0.4226F));
 
         PartDefinition cube_r13 = Flowers.addOrReplaceChild("cube_r13", CubeListBuilder.create().texOffs(7, 9).addBox(-2.0F, 0.0F, 0.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.5072F, -6.8996F, 2.1791F, 0.5108F, 0.6631F, 0.1419F));
 
@@ -66,12 +66,13 @@ public class WaterSnowflakesModel<T extends Entity> extends EntityModel<T> {
 
         PartDefinition cube_r15 = Flowers.addOrReplaceChild("cube_r15", CubeListBuilder.create().texOffs(7, 9).addBox(-2.0F, 0.0F, 0.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.5072F, -6.8996F, 2.1791F, -0.5366F, -1.2511F, 0.6144F));
 
-        PartDefinition cube_r16 = Flowers.addOrReplaceChild("cube_r16", CubeListBuilder.create().texOffs(7, 9).addBox(-2.0F, 0.0F, 0.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.5072F, -6.9996F, 2.1791F, 2.2279F, 1.0706F, 1.5237F));
+        PartDefinition cube_r16 = Flowers.addOrReplaceChild("cube_r16", CubeListBuilder.create().texOffs(7, 9).addBox(-2.1F, 0.0F, 0.1F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.5072F, -6.9996F, 2.1791F, 2.2279F, 1.0706F, 1.5237F));
 
-        PartDefinition cube_r17 = Flowers.addOrReplaceChild("cube_r17", CubeListBuilder.create().texOffs(7, 9).addBox(-2.0F, 0.0F, 0.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.5072F, -6.9996F, 2.1791F, 0.2902F, -0.3982F, 0.2776F));
+        PartDefinition cube_r17 = Flowers.addOrReplaceChild("cube_r17", CubeListBuilder.create().texOffs(7, 9).addBox(-2.1F, 0.0F, 0.1F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.5072F, -6.9996F, 2.1791F, 0.2902F, -0.3982F, 0.2776F));
 
-        PartDefinition cube_r18 = Flowers.addOrReplaceChild("cube_r18", CubeListBuilder.create().texOffs(7, 9).addBox(-2.0F, 0.0F, 0.0F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.5072F, -6.9996F, 2.1791F, -2.3417F, -0.6303F, 2.362F));
+        PartDefinition cube_r18 = Flowers.addOrReplaceChild("cube_r18", CubeListBuilder.create().texOffs(7, 9).addBox(-2.1F, 0.0F, 0.1F, 2.0F, 0.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.5072F, -6.9996F, 2.1791F, -2.3417F, -0.6303F, 2.362F));
 
+        // Use exact child name expected by the constructor: "LeavesAndStems"
         PartDefinition LeavesAndStems = Plant.addOrReplaceChild("LeavesAndStems", CubeListBuilder.create(), PartPose.offset(6.656F, -6.3F, 4.7053F));
 
         PartDefinition cube_r19 = LeavesAndStems.addOrReplaceChild("cube_r19", CubeListBuilder.create().texOffs(13, 11).addBox(0.391F, -12.1611F, -7.8888F, 0.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.8238F, 14.7394F, 5.3361F, -0.3969F, 0.572F, -0.4003F));
@@ -112,6 +113,7 @@ public class WaterSnowflakesModel<T extends Entity> extends EntityModel<T> {
 
         PartDefinition cube_r37 = LeavesAndStems.addOrReplaceChild("cube_r37", CubeListBuilder.create().texOffs(13, 11).addBox(3.0F, -12.0F, -6.0F, 0.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-5.5302F, 12.6187F, 1.4292F, -0.2188F, 0.5632F, -0.2862F));
 
+        // Removed duplicated addBox call which could corrupt the model definition
         PartDefinition cube_r38 = LeavesAndStems.addOrReplaceChild("cube_r38", CubeListBuilder.create().texOffs(13, 11).addBox(3.0F, -12.0F, -6.0F, 0.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-13.076F, 11.8482F, -4.4549F, 0.1281F, -1.3478F, -0.3413F));
 
         PartDefinition cube_r39 = LeavesAndStems.addOrReplaceChild("cube_r39", CubeListBuilder.create().texOffs(1, 7).addBox(-3.0F, -6.0F, 0.0F, 0.0F, 6.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-9.856F, 7.0F, -4.7053F, 2.4179F, 1.2062F, 2.4986F));
