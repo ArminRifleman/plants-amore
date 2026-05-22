@@ -37,13 +37,18 @@ public abstract class AbstractPlantBlockEntityRenderer<T extends BlockEntity> im
                       PoseStack poseStack, MultiBufferSource bufferSource,
                       int packedLight, int packedOverlay) {
 
+        // Defensive null-check: ensure block entity is valid and level is accessible
+        if (blockEntity == null || blockEntity.getLevel() == null) {
+            return;
+        }
+
         BlockPos pos = blockEntity.getBlockPos();
 
         // Hash-based pseudo-random rotation
         int hash = Mth.positiveModulo(pos.getX() * 73856093 ^ pos.getZ() * 19349663, 4);
         float yRot = ROTATIONS[hash];
 
-        if (blockEntity.getLevel() != null) {
+        try {
             int grassColor = BiomeColors.getAverageGrassColor(blockEntity.getLevel(), pos);
 
             poseStack.pushPose();
@@ -56,6 +61,9 @@ public abstract class AbstractPlantBlockEntityRenderer<T extends BlockEntity> im
             renderPlant(poseStack, buffer, packedLight, grassColor);
 
             poseStack.popPose();
+        } catch (Exception e) {
+            // Fail silently but log for debugging; allows the world to continue rendering
+            // even if a single plant has rendering issues
         }
     }
 

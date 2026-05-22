@@ -21,38 +21,46 @@ public class ModBlockEntities {
            registerDragonScales("dragon_scales", ModBlocks.DRAGON_SCALES);
 
     private static BlockEntityType<GenericPlantBlockEntity> registerRainbowTulip(String name, net.minecraft.world.level.block.Block block) {
+        BlockEntityType<GenericPlantBlockEntity> type = BlockEntityType.Builder.of(
+                (pos, state) -> new GenericPlantBlockEntity(null, pos, state), block
+        ).build(null);
         return Registry.register(
                 BuiltInRegistries.BLOCK_ENTITY_TYPE,
                 ResourceLocation.fromNamespaceAndPath("rainbowtulip", name),
-                BlockEntityType.Builder.of((pos, state) -> new GenericPlantBlockEntity(
-                        null, pos, state), block).build(null)
+                type
         );
     }
 
     private static BlockEntityType<GenericPlantBlockEntity> registerWaterPoppies(String name, net.minecraft.world.level.block.Block block) {
+        BlockEntityType<GenericPlantBlockEntity> type = BlockEntityType.Builder.of(
+                (pos, state) -> new GenericPlantBlockEntity(null, pos, state), block
+        ).build(null);
         return Registry.register(
                 BuiltInRegistries.BLOCK_ENTITY_TYPE,
                 ResourceLocation.fromNamespaceAndPath("rainbowtulip", name),
-                BlockEntityType.Builder.of((pos, state) -> new GenericPlantBlockEntity(
-                        null, pos, state), block).build(null)
+                type
         );
     }
 
     private static BlockEntityType<GenericPlantBlockEntity> registerWaterSnowflakes(String name, net.minecraft.world.level.block.Block block) {
+        BlockEntityType<GenericPlantBlockEntity> type = BlockEntityType.Builder.of(
+                (pos, state) -> new GenericPlantBlockEntity(null, pos, state), block
+        ).build(null);
         return Registry.register(
                 BuiltInRegistries.BLOCK_ENTITY_TYPE,
                 ResourceLocation.fromNamespaceAndPath("rainbowtulip", name),
-                BlockEntityType.Builder.of((pos, state) -> new GenericPlantBlockEntity(
-                        null, pos, state), block).build(null)
+                type
         );
     }
 
     private static BlockEntityType<GenericPlantBlockEntity> registerDragonScales(String name, net.minecraft.world.level.block.Block block) {
+        BlockEntityType<GenericPlantBlockEntity> type = BlockEntityType.Builder.of(
+                (pos, state) -> new GenericPlantBlockEntity(null, pos, state), block
+        ).build(null);
         return Registry.register(
                 BuiltInRegistries.BLOCK_ENTITY_TYPE,
                 ResourceLocation.fromNamespaceAndPath("rainbowtulip", name),
-                BlockEntityType.Builder.of((pos, state) -> new GenericPlantBlockEntity(
-                        null, pos, state), block).build(null)
+                type
         );
     }
 
